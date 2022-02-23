@@ -29,10 +29,10 @@
                <a href="<?php $BASE_URL ?>index.php" class="nav-link">HOME</a>
             </li>
             <li>
-               <a href="#" class="nav-link">CATEGORIAS</a>
+               <a href="<?php $BASE_URL ?>categories.php" class="nav-link">CATEGORIAS</a>
             </li>
             <li>
-               <a href="#" class="nav-link">SOBRE</a>
+               <a href="<?php $BASE_URL ?>about.php" class="nav-link">SOBRE</a>
             </li>
             <li>
                <a href="<?php $BASE_URL ?>contact.php" class="nav-link">CONTATO</a>
