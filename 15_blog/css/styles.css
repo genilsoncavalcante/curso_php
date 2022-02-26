@@ -205,8 +205,8 @@ footer #my_page a {
    transition: .5s;
 }
 footer #my_page a:hover {
-   text-decoration: underline;
    color: #FFF;
+   text-decoration: underline;
 }
 
 /* MOBILE */
@@ -255,5 +255,41 @@ footer #my_page a:hover {
    .img-container img {
       width: 100%;
    }
+}
 
+/* CATEGORIES.PHP, SOBRE.PHP, CONTATO.PHP */
+#main-container {
+   max-width: 1200px;
+   margin: 0 auto;
+   margin-top: 30px;
+}
+#main-container .info-categories {
+   max-width: 800px;
+   margin-bottom: 30px;
+
+}
+#main-container .info-categories p {
+   word-spacing: 2px;
+   line-height: 18px;
+   margin-bottom: 10px;
+}
+
+#categories {
+   margin: 0 0 300px 30px;
+   display: inline-block;
+}
+#categories li {
+   margin-bottom: 10px;
+   list-style: circle;
+}
+#categories a {
+   color: #666;
+   transition: .5s;
+   text-decoration: underline;
+}
+#categories li:hover {
+   list-style: disc;
+}
+#categories a:hover {
+   color: #000;
 }

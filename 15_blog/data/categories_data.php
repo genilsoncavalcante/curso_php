@@ -6,6 +6,5 @@
     'CSS',
     'JavaScript',
     'Bootstrap',
-    'Java',
-    'C#'
+    'Java'
   ];

@@ -21,7 +21,7 @@ if (isset($_GET['id'])) {
       <div class="img-container">
          <img src="<?php $BASE_URL ?>img/<?php echo $currentPost['img'] ?>" alt="<?php echo $currentPost['title'] ?>">
       </div>
-      <?php foreach ($currentPost['p'] as $paragraph): ?>
+      <?php foreach ($currentPost['p'] as $paragraph) : ?>
          <p class="post-content"><?php echo $paragraph ?></p>
       <?php endforeach; ?>
    </div>
@@ -34,8 +34,8 @@ if (isset($_GET['id'])) {
       </ul>
       <h3 id="categories-title">Categorias</h3>
       <ul id="categories-list">
-         <?php foreach ($categories as $category) : ?>
-            <li><a href="#"><?php echo $category ?></a></li>
+         <?php foreach ($categories as $category): ?>
+            <li><a href="<?php $BASE_URL ?>category.php?category=<?php echo $category ?>"><?php echo $category ?></a></li>
          <?php endforeach; ?>
       </ul>
    </aside>
