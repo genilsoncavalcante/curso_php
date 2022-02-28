@@ -36,7 +36,7 @@
       'title' => 'A importância da lógica de programação',
       'description' => 'A lógica de programação é o ponto inicial de muitos estudantes de programação, será que é importante?',
       'tags' => ['lógica', 'programação', 'algoritmos'],
-      'categories' => 'HTML',
+      'categories' => 'PHP',
       'img' => 'prog-3.jpg',
       'p' => [
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae cumque voluptatum quis nulla facilis, repudiandae nesciunt quae ipsa sunt non magnam sapiente eos autem voluptatibus saepe laborum necessitatibus fugit Dolorem reiciendis, dolores, commodi impedit ea illo mollitia nisi cumque repellendus ullam saepe nam, nemo molestias id pariatur maxime? Dolorum earum aperiam amet doloribus, sapiente veritatis nam. Quia, tempora asperiores.',
@@ -51,7 +51,7 @@
       'title' => 'Padrões de projeto de software',
       'description' => 'Os padrões de projeto são importantes para uma solução geral para um problema que ocorre com frequência dentro de um determinado contexto no projeto de software',
       'tags' => ['programação', 'padrões de projeto', 'design patterns'],
-      'categories' => 'CSS',
+      'categories' => 'PHP',
       'img' => 'prog-4.jpg',
       'p' => [
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae cumque voluptatum quis nulla facilis, repudiandae nesciunt quae ipsa sunt non magnam sapiente eos autem voluptatibus saepe laborum necessitatibus fugit Dolorem reiciendis, dolores, commodi impedit ea illo mollitia nisi cumque repellendus ullam saepe nam, nemo molestias id pariatur maxime? Dolorum earum aperiam amet doloribus, sapiente veritatis nam. Quia, tempora asperiores.',
@@ -60,5 +60,65 @@
 
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae cumque voluptatum quis nulla facilis, repudiandae nesciunt quae ipsa sunt non magnam sapiente eos autem voluptatibus saepe laborum necessitatibus fugit Dolorem reiciendis, dolores, commodi impedit ea illo mollitia nisi cumque repellendus ullam saepe nam, nemo molestias id pariatur maxime? Dolorum earum aperiam amet doloribus, sapiente veritatis nam. Quia, tempora asperiores.'
       ]
+    ],
+  [
+    'id' => 5,
+    'title' => 'A importância da lógica de programação',
+    'description' => 'A lógica de programação é o ponto inicial de muitos estudantes de programação, será que é importante?',
+    'tags' => ['lógica', 'programação', 'algoritmos'],
+    'categories' => 'PHP',
+    'img' => 'prog-3.jpg',
+    'p' => [
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae cumque voluptatum quis nulla facilis, repudiandae nesciunt quae ipsa sunt non magnam sapiente eos autem voluptatibus saepe laborum necessitatibus fugit Dolorem reiciendis, dolores, commodi impedit ea illo mollitia nisi cumque repellendus ullam saepe nam, nemo molestias id pariatur maxime? Dolorum earum aperiam amet doloribus, sapiente veritatis nam. Quia, tempora asperiores.',
+
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae cumque voluptatum quis nulla facilis, repudiandae nesciunt quae ipsa sunt non magnam sapiente eos autem voluptatibus saepe laborum necessitatibus fugit Dolorem reiciendis, dolores, commodi impedit ea illo mollitia nisi cumque repellendus ullam saepe nam, nemo molestias id pariatur maxime? Dolorum earum aperiam amet doloribus, sapiente veritatis nam. Quia, tempora asperiores.',
+
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae cumque voluptatum quis nulla facilis, repudiandae nesciunt quae ipsa sunt non magnam sapiente eos autem voluptatibus saepe laborum necessitatibus fugit Dolorem reiciendis, dolores, commodi impedit ea illo mollitia nisi cumque repellendus ullam saepe nam, nemo molestias id pariatur maxime? Dolorum earum aperiam amet doloribus, sapiente veritatis nam. Quia, tempora asperiores.'
     ]
+  ],
+  [
+    'id' => 6,
+    'title' => 'A importância da lógica de programação',
+    'description' => 'A lógica de programação é o ponto inicial de muitos estudantes de programação, será que é importante?',
+    'tags' => ['lógica', 'programação', 'algoritmos'],
+    'categories' => 'PHP',
+    'img' => 'prog-3.jpg',
+    'p' => [
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae cumque voluptatum quis nulla facilis, repudiandae nesciunt quae ipsa sunt non magnam sapiente eos autem voluptatibus saepe laborum necessitatibus fugit Dolorem reiciendis, dolores, commodi impedit ea illo mollitia nisi cumque repellendus ullam saepe nam, nemo molestias id pariatur maxime? Dolorum earum aperiam amet doloribus, sapiente veritatis nam. Quia, tempora asperiores.',
+
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae cumque voluptatum quis nulla facilis, repudiandae nesciunt quae ipsa sunt non magnam sapiente eos autem voluptatibus saepe laborum necessitatibus fugit Dolorem reiciendis, dolores, commodi impedit ea illo mollitia nisi cumque repellendus ullam saepe nam, nemo molestias id pariatur maxime? Dolorum earum aperiam amet doloribus, sapiente veritatis nam. Quia, tempora asperiores.',
+
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae cumque voluptatum quis nulla facilis, repudiandae nesciunt quae ipsa sunt non magnam sapiente eos autem voluptatibus saepe laborum necessitatibus fugit Dolorem reiciendis, dolores, commodi impedit ea illo mollitia nisi cumque repellendus ullam saepe nam, nemo molestias id pariatur maxime? Dolorum earum aperiam amet doloribus, sapiente veritatis nam. Quia, tempora asperiores.'
+    ]
+  ],
+  [
+    'id' => 7,
+    'title' => 'A importância da lógica de programação',
+    'description' => 'A lógica de programação é o ponto inicial de muitos estudantes de programação, será que é importante?',
+    'tags' => ['lógica', 'programação', 'algoritmos'],
+    'categories' => 'PHP',
+    'img' => 'prog-3.jpg',
+    'p' => [
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae cumque voluptatum quis nulla facilis, repudiandae nesciunt quae ipsa sunt non magnam sapiente eos autem voluptatibus saepe laborum necessitatibus fugit Dolorem reiciendis, dolores, commodi impedit ea illo mollitia nisi cumque repellendus ullam saepe nam, nemo molestias id pariatur maxime? Dolorum earum aperiam amet doloribus, sapiente veritatis nam. Quia, tempora asperiores.',
+
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae cumque voluptatum quis nulla facilis, repudiandae nesciunt quae ipsa sunt non magnam sapiente eos autem voluptatibus saepe laborum necessitatibus fugit Dolorem reiciendis, dolores, commodi impedit ea illo mollitia nisi cumque repellendus ullam saepe nam, nemo molestias id pariatur maxime? Dolorum earum aperiam amet doloribus, sapiente veritatis nam. Quia, tempora asperiores.',
+
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae cumque voluptatum quis nulla facilis, repudiandae nesciunt quae ipsa sunt non magnam sapiente eos autem voluptatibus saepe laborum necessitatibus fugit Dolorem reiciendis, dolores, commodi impedit ea illo mollitia nisi cumque repellendus ullam saepe nam, nemo molestias id pariatur maxime? Dolorum earum aperiam amet doloribus, sapiente veritatis nam. Quia, tempora asperiores.'
+    ]
+  ],
+  [
+    'id' => 3,
+    'title' => 'A importância da lógica de programação',
+    'description' => 'A lógica de programação é o ponto inicial de muitos estudantes de programação, será que é importante?',
+    'tags' => ['lógica', 'programação', 'algoritmos'],
+    'categories' => 'PHP',
+    'img' => 'prog-3.jpg',
+    'p' => [
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae cumque voluptatum quis nulla facilis, repudiandae nesciunt quae ipsa sunt non magnam sapiente eos autem voluptatibus saepe laborum necessitatibus fugit Dolorem reiciendis, dolores, commodi impedit ea illo mollitia nisi cumque repellendus ullam saepe nam, nemo molestias id pariatur maxime? Dolorum earum aperiam amet doloribus, sapiente veritatis nam. Quia, tempora asperiores.',
+
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae cumque voluptatum quis nulla facilis, repudiandae nesciunt quae ipsa sunt non magnam sapiente eos autem voluptatibus saepe laborum necessitatibus fugit Dolorem reiciendis, dolores, commodi impedit ea illo mollitia nisi cumque repellendus ullam saepe nam, nemo molestias id pariatur maxime? Dolorum earum aperiam amet doloribus, sapiente veritatis nam. Quia, tempora asperiores.',
+
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae cumque voluptatum quis nulla facilis, repudiandae nesciunt quae ipsa sunt non magnam sapiente eos autem voluptatibus saepe laborum necessitatibus fugit Dolorem reiciendis, dolores, commodi impedit ea illo mollitia nisi cumque repellendus ullam saepe nam, nemo molestias id pariatur maxime? Dolorum earum aperiam amet doloribus, sapiente veritatis nam. Quia, tempora asperiores.'
+    ]
+  ]
   ];

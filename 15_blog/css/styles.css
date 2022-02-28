@@ -65,20 +65,21 @@ main {
    margin-top: 30px;
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
+   gap: 40px 140px;
 }
 
 .post-box:first-child {
    min-width: 100%;
 }
 .post-box {
-   flex: 1 1 0;
-   margin-bottom: 20px;
+   flex: 0 0 250px;
 }
-.post-box:nth-child(3) {
-   margin: 0 1%;
+.post-box:first-child img{
+   width: 100%;
 }
 .post-box img {
-   width: 100%;
+   width: 300px;
 }
 .post-box .post-title {
    font-size: 24px;
@@ -99,7 +100,7 @@ main {
 .tags-container {
    margin-top: 10px;
 }
-.tags-container a {
+.tags-container p {
    font-size: 14px;
    color: #333;
    display: inline-block;
@@ -165,12 +166,12 @@ main {
 #tag-list li, #categories-list li {
    margin-bottom: 10px;
 }
-#tag-list a, #categories-list a {
+#tag-list li, #categories-list a {
    color: #666;
    transition: .5s;
    text-decoration: underline;
 }
-#tag-list a:hover, #categories-list a:hover {
+#tag-list li:hover, #categories-list a:hover {
    color: #000;
 }
 
@@ -292,4 +293,50 @@ footer #my_page a:hover {
 }
 #categories a:hover {
    color: #000;
+}
+
+/* CATEGORY.PHP */
+#category-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.category-box {
+   flex: 0 0 250px;
+   margin: 30px;
+}
+.category-box img, .category-box h2, .tags-container {
+   width: 250px;
+   margin: 5px;
+}
+
+
+.category-box .category-title {
+   font-size: 20px;
+   text-decoration: underline;
+}
+.category-box .category-title a {
+   color: #000;
+   transition: .5s;
+}
+.category-box .category-title a:hover {
+   color: #999;
+}
+.category-box .category-description {
+   text-align: justify;
+   color: #666;
+}
+
+.tags-container {
+   margin-top: 10px;
+}
+.tags-container p {
+   font-size: 14px;
+   color: #333;
+   display: inline;
+   text-decoration: underline;
+   margin-right: 2px;
 }

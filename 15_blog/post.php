@@ -29,7 +29,7 @@ if (isset($_GET['id'])) {
       <h3 id="tags-title">Tags</h3>
       <ul id="tag-list">
          <?php foreach ($currentPost['tags'] as $tag) : ?>
-            <li><a href="#"><?php echo $tag ?></a></li>
+            <li><?php echo $tag ?></li>
          <?php endforeach; ?>
       </ul>
       <h3 id="categories-title">Categorias</h3>
