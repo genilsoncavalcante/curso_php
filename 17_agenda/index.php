@@ -21,13 +21,19 @@ include_once("templates/header.php");
          <tbody>
             <?php foreach ($contacts as $contact) : ?>
                <tr>
-                  <td scope="row"><?php echo $contact['id'] ?></td>
+                  <td scope="row" class="col-id"><?php echo $contact['id'] ?></td>
                   <td scope="row"><?php echo $contact['name'] ?></td>
                   <td scope="row"><?php echo $contact['phone'] ?></td>
                   <td class="actions">
-                     <a href="#"><i class="fas fa-eye check-icon"></i></a>
-                     <a href="#"><i class="far fa-edit edit-icon"></i></a>
-                     <button type="submit"><i class="fas fa-times delete-icon"></i></button>
+                     <a href="<?php echo $BASE_URL ?>/show.php?id=<?php echo $contact['id'] ?>"><i class="fas fa-eye check-icon"></i></a>
+                     <a href="<?php echo $BASE_URL ?>/edit.php?id=<?php echo $contact['id'] ?>"><i class="far fa-edit edit-icon"></i></a>
+
+                     <!-- DELETAR CONTATO -->
+                     <form class="delete-form" action="<?php echo $BASE_URL ?>/config/process.php" method="POST">
+                        <input type="hidden" name="type" value="delete">
+                        <input type="hidden" name="id" value="<?php echo $contact['id'] ?>">
+                        <button type="submit" class="delete-btn"><i class="fas fa-times delete-icon"></i></button>
+                     </form>
                   </td>
                </tr>
             <?php endforeach; ?>
