@@ -23,19 +23,30 @@ if (!isset($_session['msg'])) {
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <!-- CSS -->
    <link rel="stylesheet" href="<?php echo $BASE_URL ?>/css/styles.css">
+
+   <!-- REMOVENDO ICONE DE PESQUISA EM PÁGINA SEM CONTATO -->
+   <style>
+      <?php if (count($contacts) == 0) : ?>
+         #search {
+            display: none;
+         }
+      <?php endif; ?>
+   </style>
 </head>
 
 <body>
    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-         <a href="<?php echo $BASE_URL ?>/index.php" class="navbar-brand">
-            <img src="<?php echo $BASE_URL ?>/img/logo.svg" alt="Agenda">
+      <nav>
+         <a href="<?php echo $BASE_URL ?>/index.php">
+            <img src="<?php echo $BASE_URL ?>/img/logo.svg" alt="Agenda" id="logo">
          </a>
-         <div>
-            <div class="navbar-nav">
-               <a href="<?php echo $BASE_URL ?>/index.php" class="nav-link active" id="home-link">Agenda</a>
-               <a href="<?php echo $BASE_URL ?>/create.php" class="nav-link active">Adicionar Contato</a>
-            </div>
+
+         <div class="navigation">
+            <a href="<?php echo $BASE_URL ?>/index.php" id="home-link">Agenda</a>
+            <a href="<?php echo $BASE_URL ?>/create.php">Adicionar Contato</a>
          </div>
+
+         <!-- CAMPO DO USUÁRIO - LOGIN -->
+
       </nav>
    </header>

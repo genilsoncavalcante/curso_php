@@ -8,6 +8,16 @@ include_once("templates/header.php");
 
    <h1 id="main-title">Minha Agenda</h1>
 
+   <!-- CAMPO DE PESQUISA -->
+   <div id="search">
+      <form action="<?php echo $BASE_URL ?>/index.php" method="GET">
+         <input type="search" name="input_search" id="input_search" placeholder="Pesquisar">
+      </form>
+      <label for="input_search">
+         <i class="fas fa-search"></i>
+      </label>
+   </div>
+
    <?php if (count($contacts) > 0) : ?>
       <table class="table" id="contacts-table">
          <thead>
@@ -39,8 +49,11 @@ include_once("templates/header.php");
             <?php endforeach; ?>
          </tbody>
       </table>
-   <?php else : ?>
-      <p id="empty-list-text">Ainda não há contatos em sua agenda, <a href="<?php echo $BASE_URL ?>/create.php">Click aqui para adicionar</a>.</p>
+
+   <?php elseif (!empty($search)) : ?>
+      <p id="empty-list-text">Não há esse contato em sua agenda, <a href="<?php echo $BASE_URL ?>">click aqui para voltar</a>.</p>
+   <?php elseif (empty($search)) : ?>
+      <p id="empty-list-text">Ainda não há contatos em sua agenda, <a href="<?php echo $BASE_URL ?>/create.php">click aqui para adicionar</a>.</p>
    <?php endif; ?>
 </div>
 <?php

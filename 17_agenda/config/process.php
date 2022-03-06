@@ -97,12 +97,16 @@
    } else {
 
       $id;
+      $search;
 
-      if (!empty($_GET)) {
+      if (!empty($_GET["id"])) {
          $id = $_GET["id"];
       }
+      if (!empty($_GET["input_search"])) {
+         $search = $_GET["input_search"];
+      }
 
-      //Retorna o dado de um contato
+      //RETORNA O DADO DE UM CONTATO
       if (!empty($id)) {
 
          $query = "SELECT * FROM contacts WHERE id = :id";
@@ -111,9 +115,18 @@
          $stmt->execute();
          $contact = $stmt->fetch();
 
+      //PESQUISA CONTATOS
+      } else if(!empty($search)) {
+
+         $contacts = [];
+         $query = "SELECT * FROM contacts WHERE name = '$search' OR id = '$search' OR phone = '$search'";
+         $stmt = $conn->prepare($query);
+         $stmt->execute();
+         $contacts = $stmt->fetchAll();
+
       } else {
 
-         //Retorna todos os contatos
+         //RETORNA TODOS OS CONTATOS
          $contacts = [];
          $query = "SELECT * FROM contacts";
          $stmt = $conn->prepare($query);
