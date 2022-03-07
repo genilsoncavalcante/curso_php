@@ -119,7 +119,7 @@
       } else if(!empty($search)) {
 
          $contacts = [];
-         $query = "SELECT * FROM contacts WHERE name = '$search' OR id = '$search' OR phone = '$search'";
+         $query = "SELECT * FROM contacts WHERE name LIKE '$search%' OR phone LIKE '$search%' OR id = '$search'";
          $stmt = $conn->prepare($query);
          $stmt->execute();
          $contacts = $stmt->fetchAll();
