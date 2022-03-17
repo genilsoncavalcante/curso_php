@@ -30,9 +30,7 @@
             $cars[] = $car;
 
          }
-
          return $cars;
-
       }
 
       public function create(Car $car) {
@@ -43,10 +41,7 @@
          $stmt->bindParam(":km", $car->getKm());
          $stmt->bindParam(":color", $car->getColor());
 
-         $stmt->execute();
-         
+         $stmt->execute();  
       }
-
    }
-
 ?>
