@@ -67,9 +67,7 @@
 
       }
 
-
    }  else if($type === "login") {
-
 
    } 
 
