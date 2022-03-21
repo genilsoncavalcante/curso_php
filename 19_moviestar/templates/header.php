@@ -1,22 +1,22 @@
 <?php
 
-require_once("globals.php");
-require_once("db.php");
-require_once("models/Message.php");
-require_once("dao/UserDAO.php");
+   require_once("globals.php");
+   require_once("db.php");
+   require_once("models/Message.php");
+   require_once("dao/UserDAO.php");
 
-$message = new Message($BASE_URL);
+   $message = new Message($BASE_URL);
 
-$flassMessage = $message->getMessage();
+   $flassMessage = $message->getMessage();
 
-if (!empty($flassMessage["msg"])) {
-   // Limpar a mensagem
-   $message->clearMessage();
-}
+   if (!empty($flassMessage["msg"])) {
+      // Limpar a mensagem
+      $message->clearMessage();
+   }
 
-$userDao = new UserDAO($conn, $BASE_URL);
+   $userDao = new UserDAO($conn, $BASE_URL);
 
-$userData = $userDao->verifyToken(false);
+   $userData = $userDao->verifyToken(false);
 
 ?>
 

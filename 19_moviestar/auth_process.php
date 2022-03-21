@@ -45,28 +45,25 @@
                $auth = true;
 
                $userDao->create($user, $auth);
-
+               
             } else {
 
                // Enviar uma msg de erro, usuário já existe
                $message->setMessage("Usuário já cadastrado, tente outro email.", "error", "back");
 
             }
-
          } else {
 
             // Enviar uma msg de erro, as senhas não são iguais
             $message->setMessage("As senhas não são iguais.", "error", "back");
 
          }
-
       } else {
 
          // Enviar uma msg de erro, de dados faltantes
          $message->setMessage("Por favor, preencha todos os campos.", "error", "back");
 
       }
-
    }  else if($type === "login") {
 
       $email = filter_input(INPUT_POST, "email");
@@ -83,12 +80,9 @@
          $message->setMessage("Usuário e/ou senha incorreto(s).", "error", "back");
       
       }
-      
-
    } else {
 
       $message->setMessage("Informações inválidas!", "error", "/index.php");
 
    }
-
 ?>

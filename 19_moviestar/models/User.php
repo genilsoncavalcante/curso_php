@@ -36,5 +36,4 @@
       public function changePassword(User $user);
 
    }
-
 ?>
