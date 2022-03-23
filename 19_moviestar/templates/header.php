@@ -28,9 +28,9 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>MovieStar</title>
-   <link rel="short icon" href="<?php echo $BASE_URL ?>/img/moviestar.ico">
+   <link rel="short icon" href="<?php echo $BASE_URL; ?>/img/moviestar.ico">
    <!-- CSS -->
-   <link rel="stylesheet" href="<?php echo $BASE_URL ?>/css/styles.css">
+   <link rel="stylesheet" href="<?php echo $BASE_URL; ?>/css/styles.css">
    <!-- BOOTSTRAP -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.css" integrity="sha512-drnvWxqfgcU6sLzAJttJv7LKdjWn0nxWCSbEAtxJ/YYaZMyoNLovG7lPqZRdhgL1gAUfa+V7tbin8y+2llC1cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <!-- FONT AWESOME -->
@@ -40,8 +40,8 @@
 <body>
    <header>
       <nav id="main-navbar" class="navbar navbar-expand-lg">
-         <a href="<?php echo $BASE_URL ?>" class="navbar-brand">
-            <img src="<?php echo $BASE_URL ?>/img/logo.svg" alt="MovieStar" id="logo">
+         <a href="<?php echo $BASE_URL; ?>" class="navbar-brand">
+            <img src="<?php echo $BASE_URL; ?>/img/logo.svg" alt="MovieStar" id="logo">
             <span id="moviestar-title">MovieStar</span>
          </a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,25 +58,25 @@
                <?php if ($userData) : ?>
                   <!-- Usuário Logado -->
                   <li class="nav-item">
-                     <a href="<?php echo $BASE_URL ?>/newmovie.php" class="nav-link">
+                     <a href="<?php echo $BASE_URL; ?>/newmovie.php" class="nav-link">
                         <i class="far fa-plus-square"></i> Incluir Filme
                      </a>
                   </li>
                   <li class="nav-item">
-                     <a href="<?php echo $BASE_URL ?>/dashboard.php" class="nav-link">Meus Filmes</a>
+                     <a href="<?php echo $BASE_URL; ?>/dashboard.php" class="nav-link">Meus Filmes</a>
                   </li>
                   <li class="nav-item">
-                     <a href="<?php echo $BASE_URL ?>/editprofile.php" class="nav-link bold">
+                     <a href="<?php echo $BASE_URL; ?>/editprofile.php" class="nav-link bold">
                         <?php echo $userData->name ?>
                      </a>
                   </li>
                   <li class="nav-item">
-                     <a href="<?php echo $BASE_URL ?>/logout.php" class="nav-link">Sair</a>
+                     <a href="<?php echo $BASE_URL; ?>/logout.php" class="nav-link">Sair</a>
                   </li>
                <?php else : ?>
                   <!-- Usuário Não Logado -->
                   <li class="nav-item">
-                     <a href="<?php echo $BASE_URL ?>/auth.php" class="nav-link">Entrar / Cadastrar</a>
+                     <a href="<?php echo $BASE_URL; ?>/auth.php" class="nav-link">Entrar / Cadastrar</a>
                   </li>
                <?php endif; ?>
             </ul>

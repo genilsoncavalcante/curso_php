@@ -11,6 +11,10 @@
       public $bio;
       public $token;
 
+      public function getFullName($user) {
+         return $user->name . " " . $user->lastname;
+      }
+
       public function generateToken() {
          return bin2hex(random_bytes(50));
       }
@@ -23,17 +27,17 @@
 
    interface UserDAOInterface {
 
-      public function buildUser($data);
-      public function create(User $user, $authUser = false);
-      public function update(User $user, $redirect = true);
-      public function verifyToken($protected = false);
-      public function setTokenToSession($token, $redirect = true);
-      public function authenticateUser($email, $password);
-      public function findByEmail($email);
-      public function findById($id);
-      public function findByToken($token);
-      public function destroyToken();
-      public function changePassword(User $user);
+      public function buildUser($data); // Construir objeto usuário
+      public function create(User $user, $authUser = false); // Criar usuário no BD
+      public function update(User $user, $redirect = true); // Atualizar usuário no BD
+      public function verifyToken($protected = false); // Verificar token do usuário
+      public function setTokenToSession($token, $redirect = true); // Definir token na sessão
+      public function authenticateUser($email, $password); // Autenticar usuário
+      public function findByEmail($email); // Encontrar Email
+      public function findById($id); // Encontrar o id
+      public function findByToken($token); // Encontrar o token
+      public function destroyToken(); // Destruir token
+      public function changePassword(User $user); // Mudar senha
 
    }
 ?>
