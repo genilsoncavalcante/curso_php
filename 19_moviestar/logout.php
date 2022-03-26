@@ -5,5 +5,3 @@
    if($userDao) {
       $userDao->destroyToken();
    }
-
-?>

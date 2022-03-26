@@ -44,4 +44,3 @@
       public function changePassword(User $user); // Mudar senha
 
    }
-?>
