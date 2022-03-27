@@ -36,7 +36,7 @@
                <option value="Ação">Ação</option>
                <option value="Drama">Drama</option>
                <option value="Comédia">Comédia</option>
-               <option value="Fantasia / FIcção">Fantasia / FIcção</option>
+               <option value="Fantasia / FIcção">Fantasia / Ficção</option>
                <option value="Romance">Romance</option>
             </select>
             <div class="form-group">
