@@ -243,7 +243,7 @@ input.card-btn:hover {
    margin-top: 30px;
 }
 
-.edit-profile-page .card-btn, div#add-movie-container .card-btn, form#review-form .card-btn {
+.edit-profile-page .card-btn, div#add-movie-container .card-btn, form#review-form .card-btn, #edit-movie-form .card-btn {
    width: auto;
 }
 

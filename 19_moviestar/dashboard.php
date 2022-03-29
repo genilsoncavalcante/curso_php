@@ -1,4 +1,5 @@
 <?php
+
 require_once("templates/header.php");
 
 // Verifica se o usuário está autenticado
@@ -43,7 +44,7 @@ $userMovies = $movieDao->getMoviesByUserId($userData->id);
                      <a href="<?php echo $BASE_URL; ?>/editmovie.php?id=<?php echo $movie->id; ?>" class="edit-btn">
                         <i class="far fa-edit"></i> Editar
                      </a>
-                     <form action="<?php echo $BASE_URL; ?>/movie_process.php">
+                     <form action="<?php echo $BASE_URL; ?>/movie_process.php" method="POST">
                         <input type="hidden" name="type" value="delete">
                         <input type="hidden" name="id" value="<?php echo $movie->id; ?>">
                         <button type="submit" class="delete-btn">
