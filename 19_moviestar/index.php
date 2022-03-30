@@ -1,22 +1,19 @@
 <?php
-require_once("templates/header.php");
 
-require_once("dao/MovieDAO.php");
+   require_once("templates/header.php");
 
-// DAO dos filmes
-$movieDao = new MovieDAO($conn, $BASE_URL);
+   require_once("dao/MovieDAO.php");
 
-$latestMovies = $movieDao->getLatestMovies();
+   // DAO dos filmes
+   $movieDao = new MovieDAO($conn, $BASE_URL);
 
-$actionMovies = $movieDao->getMoviesByCategory("Ação");
+   $latestMovies = $movieDao->getLatestMovies();
 
-$dramaMovies = $movieDao->getMoviesByCategory("Drama");
-
-$comedyMovies = $movieDao->getMoviesByCategory("Comédia");
-
-$fantasyMovies = $movieDao->getMoviesByCategory("Fantasia / Ficção");
-
-$romanceMovies = $movieDao->getMoviesByCategory("Romance");
+   $actionMovies = $movieDao->getMoviesByCategory("Ação");
+   $dramaMovies = $movieDao->getMoviesByCategory("Drama");
+   $comedyMovies = $movieDao->getMoviesByCategory("Comédia");
+   $fantasyMovies = $movieDao->getMoviesByCategory("Fantasia / Ficção");
+   $romanceMovies = $movieDao->getMoviesByCategory("Romance");
 
 ?>
 <div id="main-container" class="container-fluid">
@@ -89,5 +86,5 @@ $romanceMovies = $movieDao->getMoviesByCategory("Romance");
 
 </div>
 <?php
-require_once("templates/footer.php");
+   require_once("templates/footer.php");
 ?>

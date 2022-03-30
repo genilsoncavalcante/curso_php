@@ -19,13 +19,13 @@ $id = filter_input(INPUT_GET, "id");
 if (empty($id)) {
 
    $message->setMessage("O filme não foi encontrado!", "error", "/index.php");
+
 } else {
 
    $movie = $movieDao->findById($id);
 
    // Verifica se o filme existe
    if (!$movie) {
-
       $message->setMessage("O filme não foi encontrado!", "error", "/index.php");
    }
 }
