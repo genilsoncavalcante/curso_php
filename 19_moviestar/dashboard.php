@@ -1,20 +1,20 @@
 <?php
 
-   require_once("templates/header.php");
+require_once("templates/header.php");
 
-   // Verifica se o usuário está autenticado
-   require_once("models/User.php");
-   require_once("dao/UserDAO.php");
-   require_once("dao/MovieDAO.php");
+// Verifica se o usuário está autenticado
+require_once("models/User.php");
+require_once("dao/UserDAO.php");
+require_once("dao/MovieDAO.php");
 
-   $user = new User();
-   $userDao = new UserDAO($conn, $BASE_URL);
+$user = new User();
+$userDao = new UserDAO($conn, $BASE_URL);
 
-   $movieDao = new MovieDAO($conn, $BASE_URL);
+$movieDao = new MovieDAO($conn, $BASE_URL);
 
-   $userData = $userDao->verifyToken(true);
+$userData = $userDao->verifyToken(true);
 
-   $userMovies = $movieDao->getMoviesByUserId($userData->id);
+$userMovies = $movieDao->getMoviesByUserId($userData->id);
 
 ?>
 
@@ -39,7 +39,7 @@
                <tr>
                   <td scope="row"><?php echo $movie->id; ?></td>
                   <td><a href="<?php echo $BASE_URL; ?>/movie.php?id=<?php echo $movie->id; ?>" class="table-movie-title"><?php echo $movie->title; ?></a></td>
-                  <td><i class="fas fa-star"></i> 9</td>
+                  <td><i class="fas fa-star"></i> <?php echo $movie->rating; ?></td>
                   <td class="actions-column">
                      <a href="<?php echo $BASE_URL; ?>/editmovie.php?id=<?php echo $movie->id; ?>" class="edit-btn">
                         <i class="far fa-edit"></i> Editar
@@ -60,5 +60,5 @@
 </div>
 
 <?php
-   require_once("templates/footer.php");
+require_once("templates/footer.php");
 ?>

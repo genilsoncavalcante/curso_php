@@ -1,22 +1,22 @@
 <?php
 
-   require_once("globals.php");
-   require_once("db.php");
-   require_once("models/Message.php");
-   require_once("dao/UserDAO.php");
+require_once("globals.php");
+require_once("db.php");
+require_once("models/Message.php");
+require_once("dao/UserDAO.php");
 
-   $message = new Message($BASE_URL);
+$message = new Message($BASE_URL);
 
-   $flassMessage = $message->getMessage();
+$flassMessage = $message->getMessage();
 
-   if (!empty($flassMessage["msg"])) {
-      // Limpar a mensagem
-      $message->clearMessage();
-   }
+if (!empty($flassMessage["msg"])) {
+   // Limpar a mensagem
+   $message->clearMessage();
+}
 
-   $userDao = new UserDAO($conn, $BASE_URL);
+$userDao = new UserDAO($conn, $BASE_URL);
 
-   $userData = $userDao->verifyToken(false);
+$userData = $userDao->verifyToken(false);
 
 ?>
 
@@ -47,7 +47,7 @@
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
          </button>
-         <form action="" method="GET" id="search-form" class="form-inline my-2 my-lg-0">
+         <form action="<?php echo $BASE_URL; ?>/search.php" method="GET" id="search-form" class="form-inline my-2 my-lg-0">
             <input type="text" name="q" id="search" class="form-control mr-sm-2" type="search" placeholder="Buscar Filmes" aria-label="Search">
             <button type="submit" class="btn my-2 my-sm-0">
                <i class="fas fa-search"></i>
